@@ -27,6 +27,7 @@ let main argv =
               (List.ofArray argv)
 
     if options.Init then
+        PS("""/bin/bash -c "screen -ls | grep wk-screen | cut -d. -f1 | awk '{print $1}' | xargs kill" """)
         PS("screen -S wk-screen")
 
     else
