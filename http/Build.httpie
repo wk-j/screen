@@ -1,0 +1,11 @@
+// Hello
+wk-screen --command
+"dotnet build src/Screen"
+
+// Hello
+wk-screen --command
+"dotnet clean src/Screen"
+
+// Hello
+wk-screen --command
+"http GET http://google.com"
