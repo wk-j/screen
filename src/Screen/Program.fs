@@ -10,9 +10,9 @@ type Options = {
 
 let rec parse options args =
     match args with
-    | "--init" :: xs ->
+    | "--init" :: xs  | "-i" :: xs ->
         parse { options with Init = true } xs
-    | "--command" :: xs ->
+    | "--command" :: xs | "-c" :: xs ->
         match xs with
         | value :: xss ->
             parse { options with Command = value } xss

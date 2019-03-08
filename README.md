@@ -16,11 +16,13 @@ dotnet tool install -g wk.Screen
 Terminal 1
 
 ```bash
+wk-screen -i
 wk-screen --init
 ```
 
 Terminal 2
 
 ```bash
+wk-screen -c ls
 wk-screen --command ls
 ```

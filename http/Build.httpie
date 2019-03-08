@@ -1,11 +1,11 @@
 // Hello
-wk-screen --command
-"dotnet build src/Screen"
+wk-screen -c "dotnet build src/Screen"
 
 // Hello
-wk-screen --command
-"dotnet clean src/Screen"
+wk-screen -c "dotnet clean src/Screen"
 
 // Hello
-wk-screen --command
-"http GET http://google.com"
+wk-screen -c "http GET http://google.com"
+
+// Install
+wk-screen -c "d-cake Install"
