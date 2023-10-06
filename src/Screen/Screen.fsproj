@@ -1,20 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <PackAsTool>true</PackAsTool>
-    <ToolCommandName>wk-screen</ToolCommandName>
-    <PackageId>wk.Screen</PackageId>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>wk-screen</ToolCommandName>
+        <PackageId>wk.Screen</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="Program.fs" />
-  </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="wk.StartProcess" Version="18.5.4" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="wk.StartProcess" Version="18.5.4" />
+    </ItemGroup>
 
 </Project>
