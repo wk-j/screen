@@ -12,8 +12,8 @@ let rec parse options args =
     | "--command" :: xs
     | "-c" :: xs ->
         match xs with
-        | value :: xss -> parse { options with Command = value } xss
-        | _ -> parse options xs
+        | [] -> options  // Keep the existing command if no value is provided
+        | _ -> parse { options with Command = String.concat " " xs } []
     | _ -> options
 
 [<EntryPoint>]
@@ -26,6 +26,7 @@ let main argv =
         PS("screen -S wk-screen")
 
     else
+        Console.WriteLine("Command: " + options.Command)
         let template =
             """/bin/bash -c "screen -S wk-screen -X stuff '{command}'$(echo -ne '\015')" """
 

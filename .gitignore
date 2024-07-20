@@ -19,3 +19,6 @@ publish
 
 target
 BenchmarkDotNet.Artifacts
+.aider*
+nupkg
+COMMIT.md

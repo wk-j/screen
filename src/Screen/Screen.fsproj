@@ -2,11 +2,12 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>wk-screen</ToolCommandName>
         <PackageId>wk.Screen</PackageId>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Version>23.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
